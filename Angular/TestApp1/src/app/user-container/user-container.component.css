@@ -1,0 +1,27 @@
+.userContent {
+    display: flex;
+    gap: 3vw;
+}
+
+.user-list {
+    background-color: greenyellow;
+    padding: 10px;
+    border: 1px solid brown;
+    height: 60vh;
+}
+
+.user-detail {
+    background-color: violet;
+    padding: 10px;
+    border: 1px solid blue;
+    width: 15vw;
+}
+
+.userContainer {
+    background-color: darkturquoise;
+    padding: 10px;
+    border: 1px solid red;
+    width: 100%;
+    flex-grow: 1;
+    height: 70vh;
+}

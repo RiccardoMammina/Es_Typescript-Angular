@@ -1,0 +1,8 @@
+.order-container{
+    background-color: rosybrown;
+    padding: 10px;
+    border: 1px solid purple;
+    width: 100%;
+    height: 70vh;
+    flex-grow: 1;
+}
