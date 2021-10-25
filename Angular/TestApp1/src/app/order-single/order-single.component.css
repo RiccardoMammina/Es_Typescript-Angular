@@ -1,0 +1,11 @@
+.order-single {
+background-color: darkgreen;
+padding: 10px;
+border: 1px solid black;
+margin-bottom: 10px;
+}
+
+.order-content {
+    display: flex;
+    gap: 3vw;
+}
