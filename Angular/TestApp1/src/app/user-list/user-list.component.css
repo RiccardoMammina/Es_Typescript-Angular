@@ -1,0 +1,13 @@
+#proPic {
+  width: 5vw;
+}
+
+.user-data {
+  display: flex;
+  align-items: baseline;
+  gap: 1vw;
+}
+
+.d-flex {
+  display: flex;
+}
