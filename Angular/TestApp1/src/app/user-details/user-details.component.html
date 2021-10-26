@@ -1,0 +1,20 @@
+
+<div>
+  <p>Id: {{ user2.id }}</p>
+  <p>Nome: {{ user2.name }}</p>
+  <p>Cognome: {{ user2.surname }}</p>
+  <p>Età: {{ user2.age }}</p>
+  <p>Data di Nascita: {{ user2.dateOfBirth | date: 'dd MMM yyyy' }}</p>
+  <p>Indirizzo:</p>
+  <p>Città: {{ user2.address.city }}</p>
+  <p>Via: {{ user2.address.street }}</p>
+  <p>CAP: {{ user2.address.postalCode }}</p>
+  <p>Ruolo: {{ user2.role }}</p>
+  <p>Username: {{ user2.username }}</p>
+  <p><img id="proPic" [src]="user2.profilePhotoUrl"></p>
+  <p>Compagnia: {{ user2.companies[0].name }}</p>
+  <p>Descrizione: {{ user2.companies[0].description }}</p>
+  <p>Compagnia: {{ user2.companies[1].name }}</p>
+  <p>Descrizione: {{ user2.companies[1].description }}</p>
+  <p>Sesso: {{ user2.gender }}</p>
+</div>

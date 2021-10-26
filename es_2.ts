@@ -75,45 +75,45 @@ interface Company {
 }
 
 //SENZA IMPLEMENTS
-// class User {
-//     private name = '';
-//     private surname = '';
-//     constructor(object: ObjectInterface) {
-//         this.name = object.name;
-//         this.surname = object.surname;
-//     }
-
-//    public fullName() {
-//         return(`${this.name} ${this.surname}`);        
-//     }
-// }
-
-// const dude = new User(obj);
-// console.log(dude.fullName());
-
-
-//CON IMPLEMENTS
-class User implements ObjectInterface {
-    id: number;
-    name: string;
-    surname: string;
-    age: number;
-    dateOfBirth: string;
-    address: Address;
-    role: Role;
-    username: string;
-    profilePhotoUrl: string;
-    companies: [Company, Company];
-    gender: Gender.male | Gender.female | Gender.other
-    constructor(name: string, surname: string) {
-        this.name = name;
-        this.surname = surname;
+class User {
+    private name = '';
+    private surname = '';
+    constructor(object: ObjectInterface) {
+        this.name = object.name;
+        this.surname = object.surname;
     }
 
-    fullName() {
-        return (`${this.name} ${this.surname}`);
+   public fullName() {
+        return(`${this.name} ${this.surname}`);        
     }
 }
 
-const nuovoUtente = new User('Mario', 'Rossi');
-console.log(nuovoUtente.fullName());
+const dude = new User(obj);
+console.log(dude.fullName());
+
+
+//CON IMPLEMENTS
+// class User implements ObjectInterface {
+//     id: number;
+//     name: string;
+//     surname: string;
+//     age: number;
+//     dateOfBirth: string;
+//     address: Address;
+//     role: Role;
+//     username: string;
+//     profilePhotoUrl: string;
+//     companies: [Company, Company];
+//     gender: Gender.male | Gender.female | Gender.other
+//     constructor(name: string, surname: string) {
+//         this.name = name;
+//         this.surname = surname;
+//     }
+
+//     fullName() {
+//         return (`${this.name} ${this.surname}`);
+//     }
+// }
+
+// const nuovoUtente = new User('Mario', 'Rossi');
+// console.log(nuovoUtente.fullName());

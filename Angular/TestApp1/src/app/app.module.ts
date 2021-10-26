@@ -10,6 +10,7 @@ import { OrderContainerComponent } from './order-container/order-container.compo
 import { OrderListComponent } from './order-list/order-list.component';
 import { OrderSingleComponent } from './order-single/order-single.component';
 import { OrderDetailComponent } from './order-detail/order-detail.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { OrderDetailComponent } from './order-detail/order-detail.component';
     OrderContainerComponent,
     OrderListComponent,
     OrderSingleComponent,
-    OrderDetailComponent
+    OrderDetailComponent,
+    UserDetailsComponent
   ],
   imports: [
     BrowserModule
