@@ -5,3 +5,7 @@ body {
 .title-centered {
     text-align: center;
 }
+
+.d-flex {
+  display: flex;
+}

@@ -1,11 +1,6 @@
 <p class="title-centered">user-list works!</p>
-<div class="d-flex user-data" *ngFor="let user of users; index as i">
-  <p>{{ i+1 }}</p>
-  <p><img id="proPic" [src] ="user.profilePhotoUrl"></p>
-    <div class="user-data">
-      <h3>{{ user.name }}</h3>
-      <h3>{{ user.surname }}</h3>
-      <p>{{ user.age }}</p>
-      <p>{{ user.address.city }}</p>
-    </div>
+<div class="user-data" *ngFor="let user of users; index as i">
+ <app-user-single [user]="user" [index]="i"></app-user-single>
 </div>
+
+
