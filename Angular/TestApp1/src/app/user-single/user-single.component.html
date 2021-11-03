@@ -5,5 +5,5 @@
       <h3>{{ user.surname }}</h3>
       <p>{{ user.age }}</p>
       <p>{{ user.address.city }}</p>
-      <button (click)="removeUser.emit(user)">Remove</button>
+      <button (click)="removeUser.emit(user)">Remove</button> <!-- STEP 1 - Crea un bottone in cui dici che al click si attiva il metodo removeUser che emette l'evento con parametro user(il singolo oggetto creato tramite l'ngFor)-->
     </div>
