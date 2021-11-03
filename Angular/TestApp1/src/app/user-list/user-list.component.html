@@ -1,6 +1,6 @@
 <p class="title-centered">user-list works!</p>
 <div class="user-data" *ngFor="let user of users; index as i">
- <app-user-single [user]="user" [index]="i"></app-user-single>
+ <app-user-single [user]="user" [index]="i" (removeUser)="deleteFunction($event)"></app-user-single>
 </div>
 
 

@@ -59,6 +59,11 @@ export class UserListComponent implements OnInit {
         }
     ];
 
+    deleteFunction(user: ObjectInterface):void {
+      const index = this.users.indexOf(user);
+      this.users.splice(index, 1)
+    }
+
   constructor() { }
 
   ngOnInit(): void {

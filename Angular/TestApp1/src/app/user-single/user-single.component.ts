@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { ObjectInterface } from '../models/ObjectInterface';
 
 @Component({
@@ -9,6 +9,11 @@ import { ObjectInterface } from '../models/ObjectInterface';
 export class UserSingleComponent implements OnInit {
   @Input() user!: ObjectInterface;
   @Input() index!: number;
+  @Output() removeUser = new EventEmitter<ObjectInterface>();
+
+  userRemove(user:ObjectInterface) {
+    this.removeUser.emit(user)
+  }
   constructor() { }
 
   ngOnInit(): void {
