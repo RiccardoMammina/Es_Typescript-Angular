@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
+import { ObjectInterface } from '../models/ObjectInterface';
 
 @Component({
   selector: 'app-user-single',
@@ -6,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./user-single.component.css']
 })
 export class UserSingleComponent implements OnInit {
+  @Input() user!: ObjectInterface;
+  @Input() index!: number;
+  @Output() removeUser = new EventEmitter<ObjectInterface>();
 
+  userRemove(user:ObjectInterface) {
+    this.removeUser.emit(user)
+  }
   constructor() { }
 
   ngOnInit(): void {
