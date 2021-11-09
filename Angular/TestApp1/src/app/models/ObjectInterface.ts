@@ -21,8 +21,8 @@ export interface ObjectInterface {
   role: Role,
   username: string,
   profilePhotoUrl: string,
-  companies?: [Company, Company],
-  gender: Gender.male | Gender.female | Gender.other
+  companies?: Company[],
+  gender: Gender
 }
 
 

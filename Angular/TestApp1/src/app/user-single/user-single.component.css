@@ -5,4 +5,5 @@
 .user-data-parent {
   align-items: baseline;
   gap: 1vw;
+  border: 1px solid;
 }
