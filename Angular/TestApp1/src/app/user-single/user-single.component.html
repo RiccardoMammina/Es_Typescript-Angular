@@ -1,3 +1,22 @@
-<div class="user-single">
-    <p class="title-centered">user-single works!</p>
+<div
+  class="d-flex user-data-parent"
+  [ngStyle]="{
+    'border-color':
+      user.role === 'staff'
+        ? 'red'
+        : user.role === 'manager'
+        ? 'blue'
+        : user.role === 'admin'
+        ? 'purple'
+        : 'black'
+  }"
+>
+  <p>{{ index + 1 }}</p>
+  <img id="proPic" [src]="user.profilePhotoUrl"/>
+  <h3>{{ user.name }}</h3>
+  <h3>{{ user.surname }}</h3>
+  <p>{{ user.age }}</p>
+  <p>{{ user.address.city }}</p>
+  <button (click)="removeUser.emit(user)">Remove</button>
+  <!-- Crea un bottone in cui dici che al click si attiva il metodo removeUser che emette l'evento con parametro user(il singolo oggetto creato tramite l'ngFor)-->
 </div>

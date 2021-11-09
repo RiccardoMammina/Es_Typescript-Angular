@@ -1,4 +1,9 @@
 <p class="title-centered">user-list works!</p>
-<app-user-single></app-user-single>
-<app-user-single></app-user-single>
-<app-user-single></app-user-single>
+<div *ngIf="users.length > 0; else noPerson"> <!-- se la lunghezza dell'array users è uguale a 0 riproduci il template noPerson-->
+  <div class="user-data" *ngFor="let user of users; index as i">
+   <app-user-single [user]="user" [index]="i" (removeUser)="deleteFunction($event)"></app-user-single>
+  </div>
+</div>
+
+
+<ng-template #noPerson>Non sono presenti utenti</ng-template>
